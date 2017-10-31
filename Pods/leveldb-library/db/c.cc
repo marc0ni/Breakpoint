@@ -272,7 +272,7 @@ void leveldb_compact_range(
   db->rep->CompactRange(
       // Pass NULL Slice if corresponding "const char*" is NULL
                         (start_key ? (static_cast<void>(a = Slice(start_key, start_key_len)), &a) : NULL),
-      (limit_key ? (b = Slice(limit_key, limit_key_len), &b) : NULL));
+                        (limit_key ? (static_cast<void>(b = Slice(limit_key, limit_key_len)), &b) : NULL));
 }
 
 void leveldb_destroy_db(
