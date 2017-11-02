@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381D331A1FAAA9E800640311 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381D33191FAAA9E800640311 /* UIViewExt.swift */; };
 		38975E1B1FA583B8007EBAE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38975E1A1FA583B8007EBAE2 /* GoogleService-Info.plist */; };
 		38975E1D1FA599F2007EBAE2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38975E1C1FA599F2007EBAE2 /* DataService.swift */; };
 		38975E1F1FA7E5A3007EBAE2 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38975E1E1FA7E5A3007EBAE2 /* AuthVC.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		0936D8FA04CA78B19024505E /* Pods_Breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15177C986AE0E1432DC2918C /* Pods-Breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.release.xcconfig"; sourceTree = "<group>"; };
+		381D33191FAAA9E800640311 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		38975E1A1FA583B8007EBAE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38975E1C1FA599F2007EBAE2 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		38975E1E1FA7E5A3007EBAE2 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		381D33181FAAA98D00640311 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				381D33191FAAA9E800640311 /* UIViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		38BAECAF1FA580390059502D = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +90,8 @@
 		38BAECBA1FA580390059502D /* Breakpoint */ = {
 			isa = PBXGroup;
 			children = (
+				381D33181FAAA98D00640311 /* Extensions */,
 				38BAECD31FA580910059502D /* Services */,
-				38BAECD21FA580830059502D /* Extensions */,
 				38BAECD11FA580720059502D /* Model */,
 				38BAECD01FA580660059502D /* View */,
 				38BAECCF1FA580490059502D /* Controller */,
@@ -122,13 +132,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		38BAECD21FA580830059502D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		38BAECD31FA580910059502D /* Services */ = {
@@ -298,6 +301,7 @@
 				38BAECC01FA580390059502D /* GroupsVC.swift in Sources */,
 				38975E211FA7E5FD007EBAE2 /* LoginVC.swift in Sources */,
 				38BAECBC1FA580390059502D /* AppDelegate.swift in Sources */,
+				381D331A1FAAA9E800640311 /* UIViewExt.swift in Sources */,
 				38D23B501FA95ADF00C9F2DA /* MeVC.swift in Sources */,
 				38D23B4C1FA905D100C9F2DA /* AuthService.swift in Sources */,
 				38BAECBE1FA580390059502D /* FeedsVC.swift in Sources */,
