@@ -11,7 +11,6 @@ import UIKit
 class FeedsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    
     var messageArray = [Message]()
     
     override func viewDidLoad() {
