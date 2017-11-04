@@ -30,9 +30,7 @@ class AuthService {
                 loginComplete(false, error)
                 return
             }
-            loginComplete(true, nil)
-            
+            loginComplete(true, nil)            
         }
-        
     }
 }

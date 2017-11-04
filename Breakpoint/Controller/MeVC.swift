@@ -26,7 +26,8 @@ class MeVC: UIViewController {
 
     @IBAction func logoutBtnWasPressed(_ sender: Any) {
         let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure you want to logout?", preferredStyle: .actionSheet)
-        let logoutAction = UIAlertAction(title: "Logout?", style: .destructive) { (buttonTapped) in
+        let logoutAction = UIAlertAction(title: "Logout?", style: .destructive)
+        { (buttonTapped) in
             
             do {
                 try Auth.auth().signOut()
@@ -38,6 +39,11 @@ class MeVC: UIViewController {
         }
         logoutPopup.addAction(logoutAction)
         present(logoutPopup, animated: true, completion: nil)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+        })
+        logoutPopup.addAction(cancelAction)
     }
     
 }

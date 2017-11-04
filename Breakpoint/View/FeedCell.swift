@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FeedCell: UITableViewCell {
     @IBOutlet weak var profileImage: UIImageView!
@@ -15,7 +16,7 @@ class FeedCell: UITableViewCell {
     
     func configureCell(profileImage: UIImage, email:String, content:String) {
         self.profileImage.image = profileImage
-        self.emailLbl.text = email
+        self.emailLbl.text = Auth.auth().currentUser?.email
         self.contentLbl.text = content
     }
 }
