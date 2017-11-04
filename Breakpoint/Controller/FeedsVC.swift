@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase 
+import Firebase
 
 class FeedsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
