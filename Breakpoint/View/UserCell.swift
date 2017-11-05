@@ -13,20 +13,33 @@ class UserCell: UITableViewCell {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var checkmarkImage: UIImageView!
     
+    var showing = false
+    
     func configureCell(profileImage image:UIImage, email:String, isSelected:Bool) {
         self.profileImage.image = image
         self.emailLbl.text = email
         
         if isSelected {
-            self.checkmarkImage.isHidden == false
+            self.checkmarkImage.isHidden = false
         } else {
-            self.checkmarkImage.isHidden == true
+            self.checkmarkImage.isHidden = true
         }
     }
     
-    /*override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(<#T##selected: Bool##Bool#>, animated: <#T##Bool#>)
-    }*/
-        
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        if selected {
+            if showing == false {
+                checkmarkImage.isHidden = false
+                showing = true
+            } else {
+                checkmarkImage.isHidden = true
+                showing = false
+            }
+        }
+    }
+}
+
+extension CreateGroupsVC: UITextFieldDelegate {
     
 }
