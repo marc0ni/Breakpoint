@@ -434,9 +434,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="titleTextField:" destination="CL9-BW-X6j" eventType="editingDidEnd" id="jdk-Fl-EYl"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="give your group a description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cJR-cY-j0H" customClass="InsetTextField" customModule="Breakpoint" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="45" width="335" height="40"/>
@@ -447,9 +444,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="descTextField:" destination="CL9-BW-X6j" eventType="editingDidEnd" id="MwC-d0-LvI"/>
-                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add people to your group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="9IS-5w-HoU">
                                         <rect key="frame" x="0.0" y="90" width="335" height="19"/>
@@ -466,9 +460,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="emailSearchTextField:" destination="WIy-KI-uG6" eventType="editingDidEnd" id="vxk-Y3-EyT"/>
-                                        </connections>
                                     </textField>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kkt-Xd-n77">
                                         <rect key="frame" x="0.0" y="179" width="335" height="378"/>
@@ -541,11 +532,11 @@
                     </view>
                     <connections>
                         <outlet property="addPeopleLbl" destination="9IS-5w-HoU" id="Zcv-MY-uNV"/>
-                        <outlet property="descriptionTextField" destination="cJR-cY-j0H" id="W9O-Tl-8P9"/>
+                        <outlet property="descriptionTextField" destination="cJR-cY-j0H" id="3jd-Sz-1z7"/>
                         <outlet property="doneBtn" destination="6ts-Cs-g0Z" id="Ac6-Ck-v8L"/>
-                        <outlet property="emailSearchTextField" destination="R0e-wQ-daf" id="wpP-f3-S8E"/>
+                        <outlet property="emailSearchTextField" destination="R0e-wQ-daf" id="S1q-PA-aJq"/>
                         <outlet property="tableView" destination="kkt-Xd-n77" id="YKE-Jz-dAo"/>
-                        <outlet property="titleTextField" destination="yf6-ck-PVS" id="gfm-6g-Ren"/>
+                        <outlet property="titleTextField" destination="yf6-ck-PVS" id="h1b-sH-Aa4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Zv-ow-Jmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -553,10 +544,10 @@
             </objects>
             <point key="canvasLocation" x="1748" y="359"/>
         </scene>
-        <!--Groups-->
+        <!--GroupsVC-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="GroupsVC" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" userLabel="GroupsVC" customClass="GroupsVC" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -817,7 +808,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctZ-LI-zu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-863.20000000000005" y="21.139430284857571"/>
+            <point key="canvasLocation" x="-863" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -839,7 +830,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-54" y="0.0"/>
         </scene>
     </scenes>
     <resources>
