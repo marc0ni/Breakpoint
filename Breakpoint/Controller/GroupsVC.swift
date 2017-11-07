@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
-class GroupsVC: UIViewController {
+class GroupsVC: UIViewController{
     @IBOutlet weak var groupsTableView: UITableView!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         groupsTableView.delegate = self
