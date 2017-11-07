@@ -17,7 +17,7 @@ class GroupFeedCell: UITableViewCell {
         
         self.profileImage.image = profileImage
         self.emailLbl.text = email
-        self.contentLbl.text = contentLbl
+        self.contentLbl.text = content
     }
     
 }

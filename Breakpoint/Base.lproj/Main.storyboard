@@ -547,7 +547,7 @@
         <!--Group FeedVC-->
         <scene sceneID="rdH-Km-MMZ">
             <objects>
-                <viewController id="5Xm-hs-RTd" customClass="GroupFeedVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="5Xm-hs-RTd" customClass="GroupFeedVC" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OIK-H3-ebm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
