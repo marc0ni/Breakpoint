@@ -43,7 +43,6 @@ class CreatePostVC: UIViewController {
                 }
             })
         }
-        
     }
 }
 
