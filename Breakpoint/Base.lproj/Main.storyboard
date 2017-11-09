@@ -567,7 +567,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_grouptitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef5-Fk-29D">
-                                        <rect key="frame" x="20" y="35" width="335" height="21"/>
+                                        <rect key="frame" x="40" y="35" width="327" height="21"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -575,11 +575,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="tjf-Dq-yWa" firstAttribute="trailing" secondItem="ef5-Fk-29D" secondAttribute="trailing" constant="20" id="0RB-fx-juE"/>
-                                    <constraint firstItem="ef5-Fk-29D" firstAttribute="centerY" secondItem="rGZ-NR-7UF" secondAttribute="centerY" id="6rA-9c-hXP"/>
+                                    <constraint firstItem="ef5-Fk-29D" firstAttribute="centerY" secondItem="rGZ-NR-7UF" secondAttribute="centerY" id="0Xp-VZ-W59"/>
+                                    <constraint firstItem="ef5-Fk-29D" firstAttribute="leading" secondItem="rGZ-NR-7UF" secondAttribute="leading" constant="20" id="27U-n4-qSe"/>
+                                    <constraint firstItem="ef5-Fk-29D" firstAttribute="centerY" secondItem="oJC-mG-wtA" secondAttribute="centerY" id="Bj2-F4-ZAd"/>
+                                    <constraint firstItem="ef5-Fk-29D" firstAttribute="centerX" secondItem="oJC-mG-wtA" secondAttribute="centerX" constant="16" id="HYI-gR-BPO"/>
                                     <constraint firstItem="rGZ-NR-7UF" firstAttribute="leading" secondItem="tjf-Dq-yWa" secondAttribute="leading" constant="20" id="T6z-ax-Ttk"/>
-                                    <constraint firstItem="ef5-Fk-29D" firstAttribute="centerX" secondItem="oJC-mG-wtA" secondAttribute="centerX" id="c6N-Nc-cdR"/>
-                                    <constraint firstItem="ef5-Fk-29D" firstAttribute="centerY" secondItem="oJC-mG-wtA" secondAttribute="centerY" id="jEB-2M-6AC"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="tjf-Dq-yWa"/>
                             </view>
@@ -619,6 +619,7 @@
                                                                 <constraint firstAttribute="height" constant="20" id="AUO-vV-vSu"/>
                                                                 <constraint firstAttribute="height" constant="20" id="ISx-Kk-WBj"/>
                                                                 <constraint firstAttribute="height" constant="20" id="IW0-JS-XKm"/>
+                                                                <constraint firstAttribute="height" constant="20" id="pg4-Jt-sEO"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
