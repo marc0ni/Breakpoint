@@ -16,6 +16,7 @@ class GroupFeedVC: UIViewController {
     @IBOutlet weak var sendBtnView: UIView!
     @IBOutlet weak var messageTextField: InsetTextField!
     @IBOutlet weak var sendBtn: UIButton!
+    @IBOutlet weak var slideViewTopConstraint: NSLayoutConstraint!
     
     var group: Group?
     var groupMessages = [Message]()
@@ -29,6 +30,7 @@ class GroupFeedVC: UIViewController {
         sendBtnView.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
+        slideViewTopConstraint.constant = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,6 +68,20 @@ class GroupFeedVC: UIViewController {
                     self.sendBtn.isEnabled = true
                 }
             })
+        }
+    }
+    
+    func animateViewUp() {
+        slideViewTopConstraint.constant = 300
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @objc func animateViewDown() {
+        slideViewTopConstraint.constant = 0
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
         }
     }
 }

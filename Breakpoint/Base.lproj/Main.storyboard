@@ -725,6 +725,7 @@
                         <outlet property="messageTextField" destination="4fv-Jc-D4j" id="YhC-dS-QbD"/>
                         <outlet property="sendBtn" destination="YZh-o9-vqH" id="CtK-Ni-aO6"/>
                         <outlet property="sendBtnView" destination="Lez-1A-ePU" id="tiO-o0-p61"/>
+                        <outlet property="slideViewTopConstraint" destination="HaI-yi-NDZ" id="2qa-im-qJI"/>
                         <outlet property="tableView" destination="l0I-FZ-RUm" id="wLI-XM-gdc"/>
                     </connections>
                 </viewController>
