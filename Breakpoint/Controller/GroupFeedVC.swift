@@ -30,7 +30,6 @@ class GroupFeedVC: UIViewController {
         sendBtnView.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
-        slideViewTopConstraint.constant = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,10 +58,12 @@ class GroupFeedVC: UIViewController {
     
     @IBAction func sendBtnWasPressed(_ sender: Any) {
         if messageTextField.text != "" {
+            animateViewUp()
             messageTextField.isEnabled = false
             sendBtn.isEnabled = false
             DataService.instance.uploadPost(withMessage: messageTextField.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: group?.key, sendComplete: { (complete) in
                 if complete {
+                    self.animateViewDown()
                     self.messageTextField.text = ""
                     self.messageTextField.isEnabled = true
                     self.sendBtn.isEnabled = true
