@@ -84,6 +84,7 @@
 			children = (
 				381D33191FAAA9E800640311 /* UIViewExt.swift */,
 				388BEA2B1FB3F31E00F414D2 /* UIViewControllerExt.swift */,
+				38BAECD11FA580720059502D /* Model */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -111,7 +112,6 @@
 			children = (
 				381D33181FAAA98D00640311 /* Extensions */,
 				38BAECD31FA580910059502D /* Services */,
-				38BAECD11FA580720059502D /* Model */,
 				38BAECD01FA580660059502D /* View */,
 				38BAECCF1FA580490059502D /* Controller */,
 				38BAECBB1FA580390059502D /* AppDelegate.swift */,
